@@ -1,0 +1,62 @@
+/**
+ * Github Corners, page css
+ * Author: Tim Holman
+ */
+
+html, body {
+  font-family: helvetica; /* TODO: Stack */;
+  background: #fff;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 24px;
+}
+
+.wrapper {
+  max-width: 580px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.builder {
+  width: 100%;
+  border: 2px solid #eee;
+  margin-top: 25px;
+}
+
+.example-area {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+
+.builder-area {
+  box-sizing: border-box;
+  display: inline-block;
+  border-left: 2px solid #eee;
+  height: 200px;
+}
+
+.builder-area div {
+  padding: 8px;
+  padding-left: 20px;
+}
+
+.builder-area {
+  padding-top: 6px;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+.builder-area input {
+  margin-right: 10px;
+}
