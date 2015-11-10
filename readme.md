@@ -8,7 +8,7 @@ You can build your own with the svg's, or copy some of the pre-defined code.
 
 ### Screenshot
 
-You can see the page here ... but I really recommend [visiting the page](http://tholman.com/github-corners) to see the small, animations that really make them come to life.
+You can see the page here ... but I really recommend [visiting the page](http://tholman.com/github-corners) to see the small animations that really make them come to life.
 
 ![Here's the page](https://i.imgur.com/703iLiS.png)
 
