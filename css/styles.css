@@ -3,8 +3,12 @@
  * Author: Tim Holman
  */
 
+* {
+    box-sizing: border-box;
+}
+
 html, body {
-    font-family: helvetica; /* TODO: Stack */;
+    font-family: Helvetica, Arial, sans-serif;
     background: #fff;
     margin: 0px;
 }
@@ -20,47 +24,49 @@ p {
 }
 
 .wrapper {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 50px;
     max-width: 580px;
     margin: auto;
-    padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
 }
 
-.builder {
-    width: 100%;
+/**
+ * Demo Code
+ */
+
+.version {
     border: 2px solid #eee;
     margin-top: 25px;
-    margin-bottom: 25px;
+    height: 200px;
 }
 
-.example-area {
-    width: 200px;
-    height: 200px;
-    display: inline-block;
+.version-section {
+    padding: 10px;
+    height: 100%;
+    float: left;
+}
+
+.version-section.dark {
+    background: #151513;
+}
+
+.demo {
+    border-right: 2px solid #eee;
     position: relative;
+    width: 200px;
+}
+
+.code {
     vertical-align: top;
+    width: 336px;
 }
 
-.builder-area {
-    box-sizing: border-box;
-    display: inline-block;
-    border-left: 2px solid #eee;
-    height: 200px;
-}
-
-.builder-area div {
-    padding: 8px;
-    padding-left: 20px;
-}
-
-.builder-area {
-    padding-top: 6px;
-    box-sizing: border-box;
+.code textarea {
+    border: 2px solid #eee;
+    outline: 0px;
+    height: 100%;
+    width: 100%;
     font-family: monospace;
-}
-
-.builder-area input {
-    margin-right: 10px;
+    font-size: 10px;
 }
