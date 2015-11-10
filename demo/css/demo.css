@@ -1,5 +1,5 @@
 /**
- * Github Corners, page css
+ * Github Corners - Demo page CSS
  * Author: Tim Holman
  */
 
@@ -7,87 +7,114 @@
     box-sizing: border-box;
 }
 
-html, body {
-    font-family: Helvetica, Arial, sans-serif;
-    background: #fff;
-    margin: 0px;
+html,
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #fff;
+  font-size: 16px;
+  margin: 0px;
 }
 
 h1 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 p {
-    font-size: 16px;
-    font-weight: 100;
-    line-height: 24px;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 24px;
+}
+
+section {
+  margin: 3rem 0;
 }
 
 .wrapper {
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 50px;
-    max-width: 580px;
-    margin: auto;
+  margin: auto;
+  max-width: 620px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
 }
+
+/*
+ * Documentation definition list
+*/
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 1rem;
+}
+
 
 /**
- * Demo Code
+ * Examples
  */
-
-.version {
-    border: 2px solid #eee;
-    margin-top: 25px;
-    height: 200px;
-    display: flex;
+.example {
+  background: #fff;
+  border: 2px solid #f0f1f3;
+  display: flex;
+  margin: 20px 0;
 }
 
-.version-section {
-    padding: 10px;
-    height: 100%;
+.example--alt {
+  background: #a0a1a4;
 }
 
-.version-section.dark {
-    background: #151513;
+.example__ui {
+  position: relative;
+  width: 200px;
 }
 
-.demo {
-    border-right: 2px solid #eee;
-    position: relative;
-    width: 200px;
+.example__code {
+  background: #f0f1f3;
+  flex: 1;
+  padding: 1rem;
+  vertical-align: top;
 }
 
-.code {
-    vertical-align: top;
-    width: 336px;
+.example__code h6 {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin: 0 0 0.5rem;
 }
 
-.code textarea {
-    border: 2px solid #eee;
-    outline: 0px;
-    height: 100%;
-    width: 100%;
-    font-family: monospace;
-    font-size: 10px;
+.example__code textarea {
+  background: #fff;
+  border: 1px solid #f0f1f3;
+  font-family: monaco, monospace;
+  font-size: 10px;
+  height: 100px;
+  margin-bottom: 10px;
+  outline: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.inline-code {
+  padding: 1px 3px;
+  background: #f0f1f3;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  font-family: monaco, monospace;
+  font-size: 11px;
 }
 
 /**
  * Footer
  */
-
 footer {
-    width: 100%;
-    margin-top: 25px;
-    margin-bottom: 100px;
-    background: #F3F3F3;
-    height: 50px;
-    padding: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
-    color: #2D2D2D;
-    font-size: 13px;
-    letter-spacing: 1px;
-    font-family: monospace;
+  background: #F0f1f3;
+  color: #2D2D2D;
+  font-family: monaco, monospace;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 4rem;
+  padding: 1rem 1.2rem;
+  width: 100%;
 }
 
 footer a {
@@ -106,24 +133,22 @@ footer span {
 /**
  * Media
  */
-
 @media (max-width: 500px) {
+  footer {
+    height: auto;
+    line-height: 30px;
+    text-align: center;
+  }
 
-    footer {
-        text-align: center;
-        height: auto;
-        line-height: 30px;
-    }
+  footer span {
+    display: none;
+  }
 
-    footer span {
-        display: none;
-    }
+  footer a {
+    display: block;
+  }
 
-    footer a {
-        display: block;
-    }
-
-    .twitter-share-button {
-        margin-bottom: -8px;
-    }
+  .twitter-share-button {
+    margin-bottom: -8px;
+  }
 }
