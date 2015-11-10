@@ -1,0 +1,74 @@
+@keyframes github-corner__tail-wiggle {
+    0% { transform: rotate(0deg); }
+   20% { transform: rotate(-25deg); }
+   40% { transform: rotate(10deg); }
+   60% { transform: rotate(-25deg); }
+   80% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.github-corner {
+  position: absolute;
+  top: 0;
+}
+
+.github-corner svg {
+  border: none;
+  height: 80px;
+  width: 80px;
+}
+
+.github-corner__mask {
+  background: #000;
+}
+
+.github-corner__tail {
+  fill: #fff;
+}
+
+.github-corner__body {
+  fill: #fff;
+}
+
+/*
+  Position modifiers
+*/
+.github-corner--right {
+  left: auto;
+  right: 0;
+}
+
+.github-corner--left {
+  left: 0;
+  right: auto;
+}
+
+/*
+  Rotate SVG when on left side
+*/
+.github-corner--left svg {
+  transform: scale(-1, 1);
+}
+
+/*
+  Octocat wiggles it's tail on hover
+*/
+.github-corner__tail {
+  transform-origin: 130px 106px;
+}
+.github-corner:hover .github-corner__tail {
+  animation: github-corner__tail-wiggle 560ms ease-in-out;
+}
+
+/*
+  Media queries
+*/
+@media (max-width: 500px) {
+  .github-corner:hover .github-corner__tail {
+    animation: none;
+  }
+
+  .github-corner .github-corner__tail {
+    animation: github-corner__tail-wiggle 560ms ease-in-out;
+  }
+}
