@@ -39,12 +39,12 @@ p {
     border: 2px solid #eee;
     margin-top: 25px;
     height: 200px;
+    display: flex;
 }
 
 .version-section {
     padding: 10px;
     height: 100%;
-    float: left;
 }
 
 .version-section.dark {
@@ -71,7 +71,6 @@ p {
     font-size: 10px;
 }
 
-
 /**
  * Footer
  */
@@ -80,6 +79,26 @@ footer {
     width: 100%;
     margin-top: 25px;
     margin-bottom: 100px;
-    background: #eee;
+    background: #F3F3F3;
     height: 50px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #2D2D2D;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: monospace;
+}
+
+footer a {
+    color: #2d2d2d;
+}
+
+footer span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.twitter-share-button {
+    margin-bottom: -4px;
 }
