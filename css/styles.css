@@ -102,3 +102,29 @@ footer span {
 .twitter-share-button {
     margin-bottom: -4px;
 }
+
+/**
+ * Media
+ */
+
+@media (max-width: 500px) {
+
+    footer {
+        text-align: center;
+        height: auto;
+        line-height: 30px;
+    }
+
+    footer span {
+        display: none;
+    }
+
+    footer a {
+        display: block;
+    }
+
+    .twitter-share-button {
+        margin-bottom: -8px;
+    }
+
+}
