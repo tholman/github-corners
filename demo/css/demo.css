@@ -31,7 +31,7 @@ section {
 
 .wrapper {
   margin: auto;
-  max-width: 620px;
+  max-width: 580px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 50px;
@@ -54,7 +54,7 @@ dd {
  */
 .example {
   background: #fff;
-  border: 2px solid #f0f1f3;
+  border: 2px solid #f4f4f4;
   display: flex;
   margin: 20px 0;
 }
@@ -69,7 +69,7 @@ dd {
 }
 
 .example__code {
-  background: #f0f1f3;
+  background: #f4f4f4;
   flex: 1;
   padding: 1rem;
   vertical-align: top;
@@ -79,16 +79,17 @@ dd {
   font-size: 10px;
   font-weight: bold;
   letter-spacing: 0.1em;
-  margin: 0 0 0.5rem;
+  margin: 0 0 1rem;
 }
 
 .example__code textarea {
   background: #fff;
-  border: 1px solid #f0f1f3;
+  border: none;
+  color: #777;
+  line-height: 1.618;
   font-family: monaco, monospace;
   font-size: 10px;
-  height: 100px;
-  margin-bottom: 10px;
+  height: 120px;
   outline: 0;
   padding: 10px;
   width: 100%;
@@ -107,7 +108,7 @@ dd {
  * Footer
  */
 footer {
-  background: #F0f1f3;
+  background: #f4f4f4;
   color: #2D2D2D;
   font-family: monaco, monospace;
   font-size: 13px;
