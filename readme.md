@@ -18,4 +18,4 @@ Naturally, these aren't built by GitHub, or endorsed by them.
 
 Copyright (c) 2015 Tim Holman - http://tholman.com
 
-The MIT License (MIT)
+[The MIT License](http://tholman.com/github-corners/license.md)
