@@ -4,7 +4,7 @@ Phew, GitHub is over seven years old now... and is unquestionably synonymous wit
 
 By using SVG, these corners can be clean and sharp. Any color, and size. As well as have a little character and interactivity!
   
-You can build your own with the [SVG's](https://github.com/tholman/github-corners/tree/master/svg), or copy some of the pre-defined code.
+You can build your own with the [SVG's](https://github.com/tholman/github-corners/tree/master/svg), copy some of the pre-defined code, or just change the `fill` and `color` values on the main `<svg>` element.
 
 ### Screenshot
 
