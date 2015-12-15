@@ -39,6 +39,7 @@ p {
     border: 2px solid #eee;
     margin-top: 25px;
     height: 200px;
+    display: -webkit-flex;
     display: flex;
 }
 
