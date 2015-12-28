@@ -1,0 +1,41 @@
+{
+  "name": "github-corners",
+  "version": "1.0.0",
+  "description": "A cleaner, more modern GitHub ribbon.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npm run lint && npm run build",
+    "lint": "eslint src",
+    "watch": "watch 'npm run test' src",
+    "build": "babel src/index.js -o dist/index.js --module-id github-corners && babel src/gen.js -o dist/gen.js --module-id github-corners-gen && npm run gen",
+    "gen": "node dist/gen.js",
+    "prepublish": "npm run build",
+    "preversion": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tholman/github-corners.git"
+  },
+  "author": "Tim Holman (https://github.com/tholman)",
+  "contributors": [
+    "Anders D. Johnson (https://github.com/adjohnson916)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tholman/github-corners/issues"
+  },
+  "homepage": "https://github.com/tholman/github-corners#readme",
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-core": "^6.3.26",
+    "babel-plugin-transform-es2015-modules-umd": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "eslint": "^1.10.3",
+    "eslint-config-standard": "^4.4.0",
+    "eslint-plugin-standard": "^1.3.1",
+    "jsonfile": "^2.2.3",
+    "lodash": "^3.10.1",
+    "strip-indent": "^1.0.1",
+    "watch": "^0.17.1"
+  }
+}
