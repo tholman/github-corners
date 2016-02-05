@@ -12,7 +12,7 @@ You can see the page here... but I really recommend [visiting the page](http://t
 
 ![Here's the page](https://i.imgur.com/703iLiS.png)
 
-### Licence/Acknowledgements
+### License/Acknowledgements
 
 Naturally, these aren't built by GitHub, or endorsed by them.
 
