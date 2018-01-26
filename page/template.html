@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<title>GitHub Corners</title>
+<meta name="description" content="An alternative to GitHub ribbons.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>%(css)s</style>
+<div class="wrapper">
+    <header>
+        <h1>GitHub Corners</h1>
+        <p>Phew, GitHub is over seven years old now... and is unquestionably
+           synonomous with open source. After 7 years, those <a
+           href="https://github.com/blog/273-github-ribbons">GitHub ribbons</a>
+           are more than overdue for a cleaner, more modern alternative. This is
+           my take.
+
+        <p>By using SVG, these corners can be clean and sharp. Any color, and
+           size. As well as have a little character... on hover for desktop, and
+           on page load for mobile devices.
+
+        <p>You can build your own with the <a
+           href="https://github.com/tholman/github-corners/tree/master/svg">SVG's</a>,
+           copy some of the pre-defined code below, or just change the
+        <code>fill</code> values on the main
+        <code>&lt;svg&gt;</code> element and first <code>&lt;path&gt;</code>.
+    </header>
+    <section class="examples">
+<!-- BEGIN EXAMPLE -->
+        <div class="version">
+          <div class="demo version-section %(cls)s">
+             <a href="#" class="github-corner">%(svg)s</a>
+          </div>
+          <div class="code version-section">
+            <textarea><a href="https://your-url" class="github-corner" aria-label="View source on GitHub">%(svg)s</a><style>%(css)s</style></textarea>
+          </div>
+        </div>
+<!-- END EXAMPLE -->
+    </section>
+    <footer>
+        <a href="http://tholman.com">By Tim Holman</a> <span>&bull;</span> <a
+        href="http://twitter.com/twholman">@twholman</a> <span>&bull;</span> <a
+        href="https://twitter.com/share" class="twitter-share-button"
+        data-text="GitHub Corners - An svg replacement for those old github
+        ribbons -" data-via="twholman">Tweet</a>
+    </footer>
+    <div class="right"><a href="http://github.com/tholman/github-corners" class="github-corner" aria-label="View source on GitHub">%(svg)s</a></div>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <script>
+      var textarea = document.getElementsByTagName('textarea');
+      for(var i = 0, l = textarea.length; i < l; i++){
+        textarea[i].addEventListener("focus", function(){this.select()});
+      }
+    </script>
+</div>
