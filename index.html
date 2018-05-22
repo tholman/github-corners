@@ -18,7 +18,7 @@
                     GitHub Corners
                 </h1>
                 <p>
-                    Phew, GitHub is over seven years old now... and is unquestionably synonomous with open source. After 7 years, those <a href="https://github.com/blog/273-github-ribbons">GitHub ribbons</a> are more than overdue for a cleaner, more modern alternative. This is my take.
+                    Phew, GitHub is over <span id="age"></span> years old now... and is unquestionably synonomous with open source. After <span id="age2"></span> years, those <a href="https://github.com/blog/273-github-ribbons">GitHub ribbons</a> are more than overdue for a cleaner, more modern alternative. This is my take.
                 </p>
                 <p>
                     By using SVG, these corners can be clean and sharp. Any color, and size. As well as have a little character... on hover for desktop, and on page load for mobile devices.
@@ -185,6 +185,12 @@
               for(var i = 0, l = textarea.length; i < l; i++){
                 textarea[i].addEventListener("focus", function(){this.select()});
               }
+            </script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js'></script>
+            <script>
+              var age = moment().diff(moment("2008-02-08"), 'years');
+              document.getElementById("age").innerHTML = age;
+              document.getElementById("age2").innerHTML = age;
             </script>
         </div>
     </body>
