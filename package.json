@@ -1,0 +1,24 @@
+{
+    "name": "github-corners",
+    "version": "1.0.0",
+    "description": "A fresher \"Fork me on Github\" callout",
+    "main": "index.js",
+    "repository": "https://github.com/tholman/github-corners.git",
+    "author": "Tim Holman <timothy.w.holman@gmail.com>",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+        "@babel/core": "^7.4.3",
+        "@babel/preset-env": "^7.4.3",
+        "@babel/preset-react": "^7.0.0",
+        "babel-loader": "^8.0.5",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "webpack": "^4.29.6",
+        "webpack-cli": "^3.3.0"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "trailingComma": "es5"
+    }
+}

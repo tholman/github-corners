@@ -7,7 +7,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     font-family: Helvetica, Arial, sans-serif;
     background: #fff;
     margin: 0px;
@@ -63,17 +64,20 @@ p {
     width: 336px;
 }
 
-.code textarea {
+.code pre {
     border: 2px solid #eee;
     outline: 0px;
     height: 100%;
     width: 100%;
     font-family: monospace;
     font-size: 10px;
+    overflow: auto;
+    white-space: pre-wrap;
+    margin: 0;
 }
 
 .github-corner:hover .octo-arm {
-  animation: octocat-wave 560ms ease-in-out;
+    animation: octocat-wave 560ms ease-in-out;
 }
 
 @keyframes octocat-wave {
@@ -120,12 +124,12 @@ footer {
     width: 100%;
     margin-top: 25px;
     margin-bottom: 100px;
-    background: #F3F3F3;
+    background: #f3f3f3;
     height: 50px;
     padding: 15px;
     padding-left: 25px;
     padding-right: 25px;
-    color: #2D2D2D;
+    color: #2d2d2d;
     font-size: 13px;
     letter-spacing: 1px;
     font-family: monospace;
@@ -149,7 +153,6 @@ footer span {
  */
 
 @media (max-width: 500px) {
-
     footer {
         text-align: center;
         height: auto;
@@ -167,4 +170,43 @@ footer span {
     .twitter-share-button {
         margin-bottom: -8px;
     }
+}
+
+.form-group {
+    width: 100%;
+    padding: 0.25em;
+}
+
+.input-group {
+    display: inline;
+    margin-right: 1em;
+}
+
+.input-group input,
+.input-group label {
+    margin-right: 0.5rem;
+}
+
+input[type="color"] {
+    height: 1.5em;
+    border: none;
+    padding: 0;
+    width: 1.5em;
+}
+
+input[type="checkbox"] {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+input[type="text"] {
+    height: 1.5rem;
+    max-width: 100%;
+    padding: 0 0.5rem 0 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #70b7fd;
 }
